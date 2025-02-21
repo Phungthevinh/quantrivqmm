@@ -12,7 +12,7 @@ async function fetchTotalPages() {
 }
 
 async function fetchUsers(page) {
-    const response = await fetch(`https://vvmm.onrender.com/?page=${page}&limit=${limit}`);
+    const response = await fetch(`https://vvmm.onrender.com/GetCodeDelete/?page=${page}&limit=${limit}`);
     const data = await response.json();
     renderTable(data);
 }
